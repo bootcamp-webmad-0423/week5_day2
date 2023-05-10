@@ -1,0 +1,30 @@
+<div class="container mt-5">
+
+    <div class="row">
+
+        {{#each characters}}
+
+        <div class="col-md-3">
+
+            <article class="character-card mb-5">
+
+                <h4>{{name}}</h4>
+                <hr>
+                <p>Identificador: {{id}}</p>
+                <p>Profesión: {{occupation}}</p>
+                <p>Arma: {{weapon}}</p>
+
+                <div class="d-grid">
+
+                    <a href="/personajes/detalles/{{id}}" class="btn btn-dark">Ver detalles</a>
+                    <a href="/personajes/editar/{{id}}" class="btn btn-warning">Editar</a>
+
+                </div>
+
+            </article>
+
+        </div>
+        {{/each}}
+    </div>
+
+</div>
